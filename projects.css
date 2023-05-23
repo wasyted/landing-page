@@ -1,0 +1,33 @@
+.project-grid{
+  margin-bottom: 30px;
+  min-height: 100dvh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.projects > h1{
+  padding: 40px;
+}
+
+.project{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: clamp(300px,80%,600px);
+  color: var(--white);
+}
+
+.project > .title {
+  font-size: 1.2rem;
+}
+
+.project-links{
+  display: flex;
+  gap: 10px;
+}

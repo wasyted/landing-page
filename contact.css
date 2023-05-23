@@ -1,0 +1,38 @@
+.contact{
+  height: 100dvh!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  gap: 30px;
+  background: url(./magicpattern-mesh-gradient-1684781578356.png);
+}
+
+.contact-modal{
+  position: relative;
+  width: min(65ch, 100% - 4rem);
+}
+
+.contact-modal > form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'semi-coder';
+  gap: 10px;
+}
+
+.contact-modal > form > input{
+  padding: 5px;
+  font-size: 1rem;
+  font-family: 'semi-coder';
+}
+
+#message-input{
+  font-size: 1rem;
+  font-family: 'semi-coder';
+  resize: none;
+  height: 10ch;
+  padding: 5px;
+}
