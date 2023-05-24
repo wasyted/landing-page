@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
 .hero {
   min-height: 100dvh!important;
@@ -59,6 +61,12 @@
   border-top-right-radius: 30px;
 }
 
+.hero-text > h2 {
+  z-index: 2;
+  font-size: 3vh;
+  padding-left: 20px;
+}
+
 .hero-text > p {
   padding: 20px;
   font-family: 'Rubik';
@@ -71,6 +79,7 @@
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 10px;
+  transition: height 1s linear;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -90,8 +99,6 @@
     position: absolute !important;
     top: 0;
   }
-
-
 }
 
 .inverted-background-container{
@@ -114,9 +121,35 @@ span.blinking{
 .waves-divider > img{
   width: 100%;
   position: absolute;
-  bottom: -200px;
+  bottom: 0px;
+  bottom: -10%;
   left: 0;
   opacity: 1;
   overflow: hidden !important;
   z-index: 1;
+}
+
+.top-waves-divider > img{
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  opacity: 1;
+  overflow: hidden !important;
+  z-index: 1;
+}
+
+#word-span{
+  transition: opacity 0.5s ease-in-out;
+  text-decoration: underline;
+}
+
+.beautify-text{
+  font-size: 3vh;
+  font-family: 'Dawning of a New Day', cursive;
+}
+
+.responsive-text{
+  font-size: 3vh;
+  font-family: 'Patrick Hand SC', cursive;
 }

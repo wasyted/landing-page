@@ -72,6 +72,12 @@ img{
   font-weight: bold;
 }
 
+.sub-title{
+  font-size: 1.5em;
+  font-family: 'semi-coder';
+  font-weight: bold;
+}
+
 p{
   font-family: 'semi-coder';
   font-size: 1em;
@@ -83,6 +89,10 @@ p{
 
 .dark-background{
   background-color: var(--black);
+}
+
+.black-background{
+  background-color: black;
 }
 
 .dark-pattern-background{
@@ -117,7 +127,7 @@ footer{
 }
 
 html{
-  transition: height 200ms ease-in-out;
+  transition: height 1s ease-in-out;
   scroll-behavior: smooth;
 }
 
