@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="typewriter-animation.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="picture-gradient.css">
+  <link rel="stylesheet" href="shiny-hover.css">
+  <link rel="stylesheet" href="fade-in-text.css">
+  <link rel="stylesheet" href="page-nav.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li class="gradient-text">matías masyluk</li>
+      <li><a href="#about-anchor">about</a></li>
+      <li><a href="#projects-anchor">projects</a></li>
+      <li><a href="#contact-anchor">contact</a></li>
+    </ul>
+  </header>
+  <div class="content">
+    <div class="top-waves-divider">
+      <img src="./layered-peaks-haikei (1).svg" alt="">
+    </div>
+    <div class="section hero" id="about-anchor">
+      <div id="picture-container">
+        <div id="picture-contents">
+          <img src="./me.png">
+        </div>
+        <div id="picture-gradient">
+        </div>
+      </div>
+      <div class="hero-text">
+        <h1 class="title dark-background shiny">
+          matías wasyluk<span class="blinking">_</span>
+        </h1>
+        <p class="light-background">I'm a front-end dev building beautiful and responsive websites from scratch using CSS, JS
+          and HTML.
+          I will put into code the <span class="fade-in-text" id="word-span">WEB APP</span> that you're looking for.
+        </p>
+      </div>
+      <div class="waves-divider">
+        <img src="./layered-peaks-haikei.svg" alt="">
+      </div>
+    </div>
+    <div class="section projects black-background" id="projects-anchor">
+      <h1 class="title">projects<span class="blinking">_</span></h1>
+      <div class="project-grid">
+        <div class="project dark-background">
+          <div class="project-image-container">
+            <img src="./art-rachen-sM4r-swmcoY-unsplash.jpg" alt="">
+          </div>
+          <h1 class="title">Project name</h1>
+          <p>This is a project i worked on, it features this, this and this. It is built with these technologies.</p>
+          <div class="project-links">
+            <button>live preview</button><button>view code</button>
+          </div>
+        </div>
+        <div class="project dark-background">
+          <div class="project-image-container">
+            <img src="./hayes-potter-ElamTZZlm18-unsplash.jpg" alt="">
+          </div>
+          <h1 class="title">Project name</h1>
+          <p>This is a project i worked on, it features this, this and this. It is built with these technologies.</p>
+          <div class="project-links">
+            <button>live preview</button><button>view code</button>
+          </div>
+        </div>
+        <div class="project dark-background">
+          <div class="project-image-container">
+            <img src="./sven-d-a4S6KUuLeoM-unsplash.jpg" alt="">
+          </div>
+          <h1 class="title">Project name</h1>
+          <p>This is a project i worked on, it features this, this and this. It is built with these technologies.</p>
+          <div class="project-links">
+            <button>live preview</button><button>view code</button>
+          </div>
+        </div>
+        <div class="project dark-background">
+          <div class="project-image-container">
+            <img src="./pmv-chamara-3aFn1zWRuoc-unsplash.jpg" alt="">
+          </div>
+          <h1 class="title">Project name</h1>
+          <p>This is a project i worked on, it features this, this and this. It is built with these technologies.</p>
+          <div class="project-links">
+            <button class="light-background">live preview</button><button class="light-background">view code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section contact" id="contact-anchor">
+      <div class="contact-modal">
+        <h1 class="title dark-background">contact me<span class="blinking">_</span></h1>
+        <form action="#">
+          <label class="dark-background" for="full-name">name:</label>
+          <input placeholder='Mati Eze Wasyluk' type="text" name="full-name" id="full-name-input">
+          <label class="dark-background" for="email">email: </label>
+          <input placeholder='wasyluk@gmail.com' type="email" name="email" id="email-input">
+          <label class="dark-background" for="message">message: </label>
+          <textarea placeholder="Hi! i would like you to send me your project or job offer... thank you"name="message"id="message-input"maxlength="300"></textarea>
+          <button class="dark-background" type="submit">send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="dark-background">
+    <div>
+
+    </div>
+  </footer>
+  <div class="page-nav">
+    <div class="">
+      <button></button>
+      <p>about</p>
+    </div>
+    <div class="">
+      <button></button>
+      <p>projects</p>
+    </div>
+    <div class="">
+      <button></button>
+      <p>contact</p>
+    </div>
+    </div>
+  <style>
+    ::-webkit-scrollbar {
+      width: 10px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #cccccc;
+      border-radius: 5px
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #575757;
+      border-radius: 5px
+    }
+  </style>
+  <script src="slider.js"></script>
+  <script src="ShinyHover.js"></script>
+  <script src="WordGenerator.js"></script>
+</body>
+
+</html>
