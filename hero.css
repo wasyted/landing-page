@@ -1,45 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 .hero {
-  height: 100dvh!important;
+  min-height: 100dvh!important;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(./jeremy-bishop-8xznAGy4HcY-unsplash.jpg);
-  background-size: cover;
+  background-color:#99e9ff;
+  background:
+  radial-gradient(at 49% 20%, hsla(239,78%,67%,1) 0px, transparent 50%),
+  radial-gradient(at 35% 20%, hsla(19,82%,73%,1) 0px, transparent 50%),
+  radial-gradient(at 60% 94%, hsla(159,72%,66%,1) 0px, transparent 50%),
+  radial-gradient(at 28% 96%, hsla(308,69%,75%,1) 0px, transparent 50%),
+  radial-gradient(at 15% 4%, hsla(249,74%,63%,1) 0px, transparent 50%),
+  radial-gradient(at 88% 48%, hsla(301,71%,73%,1) 0px, transparent 50%),
+  radial-gradient(at 34% 5%, hsla(82,82%,70%,1) 0px, transparent 50%);
+  /* background: url(./jeremy-bishop-8xznAGy4HcY-unsplash.jpg); */
+  background-size: 200% 200%;
+  position: relative;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 2s ease-in-out;
+  animation-direction: alternate;
+  animation: gradient 15s ease infinite;
+  gap: 0px;
+  flex-wrap: wrap;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .hero-text {
-  position: relative;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   width: min(75ch, 100% - 4rem);
 }
 
 .hero-text > h1 {
   line-height: 1.2;
   max-width: 100%;
-  padding: 10px;
+  padding: 20px;
   z-index: 2;
-  color: var(--black);
+  font-size: 5vh;
+  color: var(--white);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 30px;
 }
 
 .hero-text > p {
+  padding: 20px;
+  font-family: 'Rubik';
   line-height: 1.6;
-  padding: 10px;
+  font-size: 3vh;
   font-weight: bold;
   z-index: 2;
   color: var(--black);
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 10px;
 }
 
 @media only screen and (max-width: 1024px) {
+  .hero{
+    align-items: end;
+  }
+  .hero-text{
+    margin-bottom: 30px;
+  }
   .hero-text > h1{
     max-width: min-content;
   }
   .hero > p{
     width: 100%;
   }
+  #picture-contents{
+    position: absolute !important;
+    top: 0;
+  }
+
+
 }
 
 .inverted-background-container{
@@ -57,4 +109,14 @@ span.blinking{
   0%{opacity: 0;}
   50%{opacity: 1;}
   100%{opacity: 0;}
+}
+
+.waves-divider > img{
+  width: 100%;
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  opacity: 1;
+  overflow: hidden !important;
+  z-index: 1;
 }

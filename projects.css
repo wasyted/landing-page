@@ -31,3 +31,8 @@
   display: flex;
   gap: 10px;
 }
+
+.projects{
+  position: relative;
+  z-index: 10;
+}

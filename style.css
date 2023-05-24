@@ -3,6 +3,8 @@
   src: url(./Semi-Coder-Regular.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 :root {
   --blue: #1e90ff;
   --white: #f5f5f5;
@@ -99,6 +101,7 @@ p{
 
 .inverted-background{
   mix-blend-mode: difference;
+  filter: invert();
 }
 
 button{
@@ -114,6 +117,7 @@ footer{
 }
 
 html{
+  transition: height 200ms ease-in-out;
   scroll-behavior: smooth;
 }
 
@@ -124,3 +128,24 @@ body{
 label{
   margin-top: 10px;
 }
+
+.custom-shape-divider-bottom-1684894731 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1684894731 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 93px;
+}
+
+.custom-shape-divider-bottom-1684894731 .shape-fill {
+  fill: #FFFFFF;
+}
+
