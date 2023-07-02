@@ -83,6 +83,10 @@ p{
   font-size: 1em;
 }
 
+h3{
+  font-family: 'semi-coder';
+}
+
 .light-background{
   background-color: var(--white);
 }

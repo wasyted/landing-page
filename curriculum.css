@@ -1,0 +1,22 @@
+.curriculum > h1 {
+    color: var(--white);
+    padding: 40px;
+    font-size: 5vh;
+}
+
+.curriculum-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.curriculum-container > img {
+    max-width: calc(100% - 2rem);
+}
+
+.curriculum{
+    padding-top: 50px;
+    position: relative;
+    z-index: 10;
+}
