@@ -11,8 +11,15 @@
     padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .curriculum-container {
+        max-width: calc(100% - 2rem);
+    }
+  }
+
 .curriculum-container > img {
-    max-width: calc(100% - 2rem);
+    width: 60%;
 }
 
 .curriculum{
