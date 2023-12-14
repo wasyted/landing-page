@@ -1,0 +1,9 @@
+@import url(./Variables.css);
+
+.contactButton{
+  border: 2px solid var(--black);
+  padding: 5px;
+  background-color: transparent;
+  width: 100px;
+  height: 40px;
+}

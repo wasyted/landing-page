@@ -1,0 +1,21 @@
+@import url('./Reset.css');
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 20px;
+}
+
+header > ul > li > img{
+  max-width: 40px;
+  height: auto;
+}

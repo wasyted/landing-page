@@ -1,0 +1,41 @@
+@import url('./Reset.css');
+@import url('./Variables.css');
+@import url('./Buttons.css');
+
+.heroContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1260px;
+  flex-wrap: wrap;
+}
+
+.heroContainer > div{
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heroContainer > div > .contactContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.heroTitle{
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.contactContainer > .contactButton{
+  background-color: var(--blue);
+  border: none;
+  color: var(--white);
+  width: 150px;
+  border-radius: 3px;
+}
