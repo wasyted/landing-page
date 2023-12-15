@@ -1,0 +1,20 @@
+.contact-button{
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+  height: 40px;
+  font-family: 'Manrope';
+  background-color: var(--black);
+  border-color: var(--black);
+  color: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+  .contact-button{
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--black);
+  }
+}

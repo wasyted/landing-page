@@ -1,7 +1,8 @@
-import './Hero.css'
+import './Hero.scss'
 import { useMediaPredicate } from 'react-media-hook';
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
+import ContactButton from './ContactButton';
 
 
 function Hero(){
@@ -26,29 +27,32 @@ function Hero(){
             </h1>
             <Fade delay={900}>
               <div className='contactContainer'>
-                <button className="contactButton">Contact me</button>
+                {/* <button className="contactButton">Contact me</button> */}
+                <ContactButton width='150px'/>
                 <p>// via email</p>
               </div>
             </Fade>
           </div>
           <Fade delay={800}>
             <div>
-              <img src={logoUrl} alt="" srcset="" />
+              <img src={logoUrl} alt="" srcSet="" />
             </div>
           </Fade>
       </div>
-      <Fade delay={2000}>
-        <Jump duration={3000} forever>
-          <div className='arrowDown'>
-            <img src="../src/assets/Arrow-down.svg.png" alt="" />
-          </div>
-        </Jump>
-        <Jump duration={3000} forever>
-          <div className='arrowDown'>
-            <img src="../src/assets/Arrow-down.svg.png" alt="" />
-          </div>
-        </Jump>
-      </Fade>
+      <div className='arrowDownContainer'>
+        <Fade delay={2000}>
+          <Jump duration={3000} forever>
+            <div className='arrowDown'>
+              <img src="../src/assets/Arrow-down.svg.png" alt="" />
+            </div>
+          </Jump>
+          <Jump duration={3000} forever>
+            <div className='arrowDown'>
+              <img src="../src/assets/Arrow-down.svg.png" alt="" />
+            </div>
+          </Jump>
+        </Fade>
+      </div>
     </div>
   )
 }

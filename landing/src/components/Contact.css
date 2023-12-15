@@ -1,0 +1,44 @@
+.contactSectionContainer{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.topRightArrow{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 4rem;
+}
+
+.contactTitle{
+  line-height: 1.1;
+  font-size: 3rem;
+  letter-spacing: -0.06rem;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+.contactSectionContainer > p{
+  max-width: 65ch;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+@media (prefers-color-scheme: dark){
+  .topRightArrow{
+    filter: invert(100%);
+  }
+}
+
+@media (max-width: 768px){
+  .topRightArrow{
+    display: none;
+  }
+  .contactSectionContainer{
+    align-items: center;
+  }
+}

@@ -18,8 +18,10 @@
     flex-direction: column;
     max-width: 1260px;
     margin: auto;
-    gap: 20px;
     overflow: hidden;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .aboutContainer > div{
@@ -27,11 +29,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .aboutContainer > div > p{
-    max-width: 65ch;
+    max-width: 45ch;
     flex: 1;
 }
 
@@ -42,34 +43,94 @@
 .aboutContainer > div > img{
     max-width: 380px;
     border-radius: 20px;
+    z-index: 2;
+}
+
+.messiContainer{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+.messiTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.messiTextContainer > h1{
+    font-weight: 800;
+}
+
+.messiTextContainer > h3{
+    max-width: 35ch;
+    text-align: end;
+    font-family: 'Manrope italic';
+}
+
+.messi{
+    max-width: 330px;
+    border-radius: 20px;
+    max-height: 380px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    overflow: visible;
+}
+
+.messiOverlay{
+    border-radius: 10px;
+    right: -35px;
+    top: 25px;
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 .mateContainer{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap-reverse;
 }
 
 .mate{
-    max-width: 380px;
+    max-width: 330px;
     border-radius: 20px;
-    max-height: 500px;
+    max-height: 380px;
     overflow: hidden;
     border-radius: 20px;
+    position: relative;
+    overflow: visible;
 }
 
 .mate > img{
     max-width: 100%;
-    border-radius: 20px;
+    max-height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.mateOverlay{
+    border-radius: 10px;
+    left: -35px;
+    top: -25px;
+    background-color: var(--black);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 .mateTextContainer{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .mateTextContainer > p{
-    width: 45ch;
+    max-width: 45ch;
 }
 
 @media screen and (max-width: 768px) {
@@ -77,6 +138,25 @@
         text-align: center;
     }
     h1, h2 , p{
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .heroText{
+        max-width: 45ch;
+    }
+    .messiTextContainer > h3{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .messiOverlay , .mateOverlay {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    .messiOverlay{
+        background-color: var(--white);
     }
 }

@@ -1,30 +1,22 @@
 @import url('./Reset.css');
 
-@media screen and (max-width: 700px) {
-  #headerContactButton{
-    display: none;
-  }
-  .via{
-    display: none;
-  }
-}
-
 .activeLink{
   background-color: var(--black);
-  color: var(--white);
 }
 
-@media (prefers-color-scheme: dark){
-  .activeLink{
-    background-color: var(--white);
-    color: var(--black);
-  }
+.activeLink > a{
+  color: var(--white);
 }
 
 header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  background-blend-mode: difference;
+  z-index: 20;
 }
 
 header > ul{
@@ -33,7 +25,7 @@ header > ul{
   justify-content: center;
   gap: 10px;
   list-style: none;
-  padding: 20px;
+  padding: 10px;
 }
 
 header > ul > li {
@@ -52,5 +44,32 @@ header > ul > img{
   height: auto;
 }
 
+@media screen and (max-width: 700px) {
+  #headerContactButton{
+    display: none;
+  }
+  .via{
+    display: none;
+  }
+}
 
+@media (prefers-color-scheme: dark){
+  header{
+    background-color: var(--black);
+  }
+  header > ul > li > a{
+    color: var(--white);
+  }
+  .activeLink{
+    background-color: var(--white);
+  }
+  .activeLink > a{
+    color: var(--black);
+  }
+}
 
+@media (max-width: 420px){
+  header > ul:last-of-type {
+    display: none;
+  }
+}

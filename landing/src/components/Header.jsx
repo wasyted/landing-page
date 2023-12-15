@@ -15,10 +15,10 @@ function Header(){
     <>
       <header>
           <ul>
-            <li className='activeLink'>Home</li>
-            <li>About me</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li className='activeLink'><a href="">Home</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
           <ul>
             <li className='via'>// via email</li>

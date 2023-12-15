@@ -4,36 +4,36 @@ import Fade from 'react-reveal/Fade';
 function About(){
   return(
     <>
+      <h1 className='sectionHeader'>About me_</h1>
       <div className="aboutContainer">
-        <Fade delay={400}>
-          <h2 style={{fontStyle: 'italic', opacity: '0.5'}}>{'"Can a musician, gamer and car enthusiast become a web-dev?"'}</h2>
-        </Fade>
-        <Fade delay={800}>
-          <h1>Well i did anyway!</h1>
-        </Fade>
-        <Fade delay={1200}>
-          <p className='heroText'>
-            I've been studying Informatics Engineering since 2021
-            but gotten into full-stack development since it allowed me to deploy all
-            my creativity, both to solve problems and creating art... (yeah my webpages i consider my art).
-          </p>
-        </Fade>
-        <Fade bottom delay={1400}>
-          <div>
-            <div>
+
+        <Fade bottom fraction={0.5}>
+          <div className='messiContainer'>
+            <div className='messiTextContainer'>
+              <h3><i>{'"Can a musician, gamer and car enthusiast become a web-dev?"'}</i></h3>
+              <h1>Well i did anyway! ↴</h1>
+              <p className='heroText'>
+                I've been studying Informatics Engineering since 2021
+                but gotten into full-stack development since it allowed me to deploy all
+                my creativity.
+              </p>
               <p>
                 Hailing from the land of tango, mate, and the occasional soccer-induced 
-                heart attack (thanks, Messi), I'm a proud Argentine with a passion for 
-                creating digital symphonies.
+                heart attack (thanks, Messi), I'm a proud Argentine with a passion for coding
+                and problem solving.
               </p>
             </div>
-            <img src="../src/assets/messi.png" alt="" />
+            <div className='messi'>
+              <img src="../src/assets/messi.png" alt="" />
+              <div className="messiOverlay"></div>
+            </div>
           </div>
         </Fade>
         <Fade bottom>
           <div className='mateContainer'>
             <div className='mate'>
-              <img src="../src/assets/mate.jpg" alt="" />
+              <img src="../src/assets/mate.png" alt="" />
+              <div className='mateOverlay'></div>
             </div>
             <div className='mateTextContainer'>
               <h2>
@@ -51,17 +51,6 @@ function About(){
             </div>
           </div>
         </Fade>
-        <div>
-          <p>
-            I believe in pushing boundaries, 
-            both in the digital realm and on the fretboard. 
-            So, whether you're looking for a website that sings 
-            or a developer who can hit the high notes, look no further! 
-            Let's create some digital magic together, 
-            because life's too short for boring websites 
-            and out-of-tune code. 🎶✨
-          </p>
-        </div>
       </div>
     </>
   )
