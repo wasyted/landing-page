@@ -1,5 +1,6 @@
 :root {
   --blue: #1e90ff;
+  --cyan: #00eeff;
   --black: #121212;
-  --white: #ffffff;
+  --white: rgba(255, 255, 255, 0.9);
 }

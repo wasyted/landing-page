@@ -1,21 +1,29 @@
-import './Header.css';
 import './Buttons.css';
 import './Variables.css';
+import './Header.css';
+import { useMediaPredicate } from "react-media-hook";
 
 function Header(){
+  let logoUrl;
+  const preferredTheme = useMediaPredicate("(prefers-color-scheme: dark)") ? "dark" : "light";
+  if (preferredTheme === "dark") {
+    logoUrl = '../src/assets/MWwhite.png';
+  } else {
+    logoUrl = '../src/assets/MW.png';
+  }
   return(
     <>
       <header>
           <ul>
-            <li><img src="../public/logo.png" alt="" srcset="" /></li>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
+            <li className='activeLink'>Home</li>
+            <li>About me</li>
+            <li>Projects</li>
+            <li>Contact</li>
           </ul>
           <ul>
-            <li>Link</li>
-            <li><button className='contactButton'>Contact me</button></li>
+            <li className='via'>// via email</li>
+            <li><button id='headerContactButton' className='contactButton'>Contact me</button></li>
+            <img src={logoUrl} alt="" srcSet="" />
           </ul>
       </header>
     </>

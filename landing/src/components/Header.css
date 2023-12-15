@@ -1,5 +1,26 @@
 @import url('./Reset.css');
 
+@media screen and (max-width: 700px) {
+  #headerContactButton{
+    display: none;
+  }
+  .via{
+    display: none;
+  }
+}
+
+.activeLink{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+@media (prefers-color-scheme: dark){
+  .activeLink{
+    background-color: var(--white);
+    color: var(--black);
+  }
+}
+
 header{
   display: flex;
   align-items: center;
@@ -15,7 +36,21 @@ header > ul{
   padding: 20px;
 }
 
-header > ul > li > img{
+header > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-width: max-content;
+  flex: 1;
+}
+
+header > ul > img{
   max-width: 40px;
   height: auto;
 }
+
+
+
