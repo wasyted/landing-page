@@ -2,7 +2,7 @@ import './Contact.css'
 
 export default function Contact(){
   return(
-  <>
+  <div className='contactSection'>
       <div className='contactSectionContainer' style={{position: 'relative', minHeight: '100dvh',}}>
           <h1 className='contactTitle'>Let's connect!</h1>
           <p>
@@ -18,6 +18,6 @@ export default function Contact(){
             <img className='topRightArrow'src="../src/assets/arrow-top-right.png" alt="" srcSet="" />
           </div>
       </div>
-  </>
+  </div>
   )
 }
