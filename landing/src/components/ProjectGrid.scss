@@ -1,0 +1,70 @@
+
+.projectGridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Project-4 {
+  background-color: var(--black);
+  min-height: 450px;
+  border-radius: 10px;
+  width: 100%;
+}
+.Project-3 {
+  background-color: var(--black);
+  min-height: 450px;
+  border-radius: 10px;
+  width: 100%;
+}
+.Project-1 { 
+  background-color: var(--black);
+  min-height: 450px;
+  border-radius: 10px;
+  width: 100%;
+}
+.Project-2 {
+  background-color: var(--black);
+  min-height: 450px;
+  border-radius: 10px;
+  width: 100%;
+}
+@media (min-width: 768px){
+  .projectGridContainer {
+    display: grid; 
+    grid-template-columns: 2.5fr 0.8fr 1.7fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px 10px;
+    padding: 20px;
+    grid-template-areas: 
+      "Project-1 Project-1 Project-2"
+      "Project-3 Project-4 Project-4"; 
+  }
+  .Project-4 {
+    grid-area: Project-4; 
+    background-color: var(--black);
+    min-height: 450px;
+    border-radius: 10px;
+  }
+  .Project-3 {
+    grid-area: Project-3; 
+    background-color: var(--black);
+    min-height: 450px;
+    border-radius: 10px;
+  }
+  .Project-1 { 
+    grid-area: Project-1;
+    background-color: var(--black);
+    min-height: 450px;
+    border-radius: 10px;
+  }
+  .Project-2 {
+    grid-area: Project-2; 
+    background-color: var(--black);
+    min-height: 450px;
+    border-radius: 10px;
+  }
+}

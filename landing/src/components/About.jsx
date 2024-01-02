@@ -3,8 +3,8 @@ import Fade from 'react-reveal/Fade';
 
 function About(){
   return(
-    <>
-      <h1 className='sectionHeader'>About me_</h1>
+    <div>
+      <h1 className='sectionHeader'>About me</h1>
       <div className="aboutContainer">
 
         <Fade bottom fraction={0.5}>
@@ -52,7 +52,7 @@ function About(){
           </div>
         </Fade>
       </div>
-    </>
+    </div>
   )
 }
 

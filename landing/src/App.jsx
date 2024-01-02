@@ -2,9 +2,10 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Fade from 'react-reveal/Fade'
-import Projects from './components/Projects';
+// import Projects from './components/Projects';
 import './App.css';
 import Contact from './components/Contact';
+import ProjectGrid from './components/ProjectGrid';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       </Fade>
       <Hero />
       <About />
-      <Projects />
+      <ProjectGrid/>
+      {/* <Projects /> */}
       <Contact />
     </>
   )

@@ -3,17 +3,22 @@
 @import url('./Buttons.css');
 
 .fullscreen{
+  position: relative;
+  overflow: hidden;
+  min-height: 90dvh;
 }
 
 .heroContainer{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1260px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   min-height: calc(100dvh - 150px);
+  z-index: 100;
+  position: relative;
 }
 
 .heroContainer > div{
@@ -86,6 +91,10 @@
 }
 
 .arrowDownContainer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
@@ -98,6 +107,9 @@
 }
 
 @media screen and (max-width: 895px) {
+  .fullscreen{
+    min-height: 100dvh;
+  }
   .heroContainer > div{
     display: flex;
     justify-content: center;
@@ -115,6 +127,12 @@
   .arrowDownContainer{
     padding-bottom: 50px;
     padding-top: 20px;
+  }
+  .heroTitle{
+    text-align: start;
+  }
+  .heroText{
+    text-align: start;
   }
 }
 
